@@ -66,7 +66,7 @@
     width: 100%;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #b0b0b0;
+    border-bottom: 1px solid #d3d3d3;
   }
   
   header .container{
@@ -144,15 +144,15 @@
   /* ====== Footer ====== */
   footer{
     background-color: var(--body-color);
-    color: var(--hover-color);
+    color: #b7b7b7;
     text-align: center;
     padding: 20px 0;
     margin: 10px 0;
-    border-top: 1px solid #b0b0b0;
+    border-top: 1px solid #d3d3d3;
   }
   
   footer .social a{
-    color: var(--hover-color);
+    color: #b7b7b7;
     text-decoration: none;
     margin:0 5px;
     font-size: 16px;
