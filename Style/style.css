@@ -1,162 +1,191 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 40px;
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(0, 0%, 29%);
-    --first-color-lighten: hsl(220, 68%, 97%);
-    --title-color: #0f0f0f;
-    --text-color: #000000;
-    --hover-color : #606060;
-    --body-color: #ffffff;
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Inter", sans-serif;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-  }
-  @media screen and (min-width: 1024px) {
-    :root {
-      --normal-font-size: 1rem;
-      --small-font-size: .875rem;
-      --smaller-font-size: .813rem;
-    }
-  }
-  
-  /*=============== BASE ===============*/
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /*=============== REUSABLE CSS CLASSES ===============*/
-  .container {
-    max-width: 1200px;
-    margin-inline: 1.5rem;
-    margin: auto;
-  }
+  --header-height: 40px;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(0, 0%, 29%);
+  --first-color-lighten: hsl(220, 68%, 97%);
+  --title-color: #0f0f0f;
+  --text-color: #000000;
+  --hover-color : #606060;
+  --body-color: #ffffff;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Inter", sans-serif;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
 
-  /* ====== Header ======== */
-  header{
-    background-color: var(--body-color);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #d3d3d3;
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
   }
+}
   
-  header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
   
-  .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    background: var(--title-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-  }
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+  
+ul {
+  list-style: none;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1200px;
+  margin-inline: 1.5rem;
+  margin: auto;
+}
 
-  .logo a img{
-    width: 150px;
-    align-self: center;
-  }
-  
-  nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  nav ul li{
-    margin-left: 20px;
-    position: relative;
-  }
-  
-  nav ul li a{
-    color: var(--hover-color);
-    text-decoration: none;
-    padding: 20px 12px;
-    display: block;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: var(--text-color);
-    cursor: pointer;
-    background-color: #f3f3f3;
-  }
-  
+/* ====== Header ======== */
+header{
+  background-color: var(--body-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #d3d3d3;
+}
 
-  .gapper{
-    justify-content: space-between;
-    display: flex;
-    width: 1200px;
-    align-items: center;
-  }
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
 
-  .lgn-btn{
-    color: #ffffff;
-    text-decoration: var(--font-semi-bold);
-    background-color: #c7b683;
-    padding:10px 40px;
-    border-radius: 5px ;
-    border: none;
-  }
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  background: var(--title-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 
-  .lgn-btn:hover{
-    background-color: #d5ac32;
-  }
+.logo a img{
+  width: 150px;
+  align-self: center;
+}
 
-  section{
-    min-height: 100vh;
-  }
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
 
-  /* ====== Footer ====== */
-  footer{
-    background-color: var(--body-color);
-    color: #b7b7b7;
-    text-align: center;
-    padding: 20px 0;
-    margin: 10px 0;
-    border-top: 1px solid #d3d3d3;
-  }
+nav ul li{
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li a{
+  color: var(--hover-color);
+  text-decoration: none;
+  padding: 20px 12px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--text-color);
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+
+.gapper{
+  justify-content: space-between;
+  display: flex;
+  width: 1200px;
+  align-items: center;
+}
+
+.lgn-btn{
+  color: #ffffff;
+  text-decoration: var(--font-semi-bold);
+  background-color: #c7b683;
+  padding:10px 40px;
+  border-radius: 5px ;
+  border: none;
+}
+
+.lgn-btn:hover{
+  background-color: #d5ac32;
+}
+
+/* ====== Footer ====== */
+footer{
+  background-color: var(--body-color);
+  color: #b7b7b7;
+  text-align: center;
+  padding: 20px 0;
+  margin: 10px 0;
+  border-top: 1px solid #d3d3d3;
+}
   
-  footer .social a{
-    color: #b7b7b7;
-    text-decoration: none;
-    margin:0 5px;
-    font-size: 16px;
-  }
+footer .social a{
+  color: #b7b7b7;
+  text-decoration: none;
+  margin:0 5px;
+  font-size: 16px;
+}
+
+/* ====== Index Page ========= */
+#carousel{
+  min-height: 100vh;
+}
+.gallery {
+  margin-top: 105px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  height: 90vh;
+}
+
+.gallery li {
+  min-width: 100vw; /* Each image fills the screen width */
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.gallery li img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover; /* Use cover to fill space nicely */
+  display: block;
+  background-color: #000000;
+}
+
+
+.active {
+	scroll-snap-type: unset;
+}
 
 /* About Us Page */
 
