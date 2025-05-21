@@ -49,3 +49,33 @@ function autoScroll() {
 }
 
 setInterval(autoScroll, 5000); // Change every 5 seconds
+
+// =======port-gallery=======
+// Enable drag-to-scroll on .portfolio
+const portfolio = document.querySelector('.portfolio');
+
+portfolio.addEventListener('mousedown', (e) => {
+    isDown = true;
+    portfolio.classList.add('active');
+    startX = e.pageX - portfolio.offsetLeft;
+    scrollLeft = portfolio.scrollLeft;
+});
+
+portfolio.addEventListener('mouseleave', () => {
+    isDown = false;
+    portfolio.classList.remove('active');
+});
+
+portfolio.addEventListener('mouseup', () => {
+    isDown = false;
+    portfolio.classList.remove('active');
+});
+
+portfolio.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - portfolio.offsetLeft;
+    const walk = (x - startX) * 2; // adjust scroll speed
+    portfolio.scrollLeft = scrollLeft - walk;
+});
+

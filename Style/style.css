@@ -187,6 +187,56 @@ footer .social a{
 	scroll-snap-type: unset;
 }
 
+#porto-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+#porto-gallery .container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  height: 30vh;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.portfolio::-webkit-scrollbar {
+  height: 8px;
+}
+
+.portfolio::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.portfolio li {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.portfolio li img {
+  width: 15vw;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #000000;
+}
+
 /* About Us Page */
 
 .about-section {
