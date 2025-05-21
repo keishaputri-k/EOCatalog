@@ -35,13 +35,13 @@ const itemWidth = slider.clientWidth + 16; // 16px = 1rem gap
 
 function autoScroll() {
   currentIndex++;
-  
+
   // If we're at the end of the list, scroll back to the start
   if (currentIndex >= items.length) {
     currentIndex = 0; // Reset to first item
     slider.scrollLeft = 0; // Optionally reset scroll position immediately
   }
-  
+
   slider.scrollTo({
     left: currentIndex * itemWidth,
     behavior: 'smooth'
@@ -79,3 +79,19 @@ portfolio.addEventListener('mousemove', (e) => {
     portfolio.scrollLeft = scrollLeft - walk;
 });
 
+// Service Section Carousel (Owl Carousel)
+$(".gallery-slider").owlCarousel({
+  autoWidth: true,
+  // Changed loop to false to prevent duplication
+  loop: false, // <--- IMPORTANT CHANGE HERE
+  dots: true,
+  // Add rewind: true if you want it to go back to the beginning after the last item
+  rewind: true
+});
+
+$(document).ready(function () {
+  $(".gallery-slider .item").click(function () {
+    $(".gallery-slider .item").not($(this)).removeClass("active");
+    $(this).toggleClass("active");
+  });
+});
