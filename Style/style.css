@@ -343,3 +343,90 @@ footer .social a{
   align-items: center;
 }
   
+/* Contact Us Page */
+.intro{
+  margin-top: 140px;
+}
+
+.introText {
+  text-align: left;
+  margin: 40px 0;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.introText h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.introText p {
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+.contactSection {
+  background-color: #d3d2d0;
+  padding: 50px 0;
+}
+
+.contactDetails {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+
+.detailItem h3 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.detailItem p {
+  font-size: 14px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formGroup {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 8px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+}
+
+.sendBtn {
+  align-self: flex-end;
+  padding: 10px 30px;
+  background-color: #b89f6a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+}

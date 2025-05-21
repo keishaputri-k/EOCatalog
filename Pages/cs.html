@@ -24,8 +24,67 @@
         </div>
     </header>
 
-    <section>
-        
+    <div class="intro">
+        <div class="container">
+        <div class="introText">
+            <h2>GET IN TOUCH</h2>
+            <p>Let’s Plan, Create, and Celebrate Together!</p>
+        </div>
+        </div>
+    </div>
+
+    <section id="enquiries">
+        <div class="contactSection">
+            <div class="container">
+                <div class="contactDetails">
+                    <div class="detailItem">
+                        <h3>Phone</h3>
+                        <p>+62 878-7511-7534</p>
+                    </div>
+                    <div class="detailItem">
+                        <h3>Email</h3>
+                        <p>chapterthree.co@gmail.com</p>
+                    </div>
+                </div>
+
+                <form action="#" method="post" class="contactForm">
+                    <div class="formRow">
+                        <div class="formGroup">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="phone">Phone Number (WhatsApp) *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="eventtype">Event Type</label>
+                        <select id="eventtype" name="eventtype">
+                            <option value="">Choose an option</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="farewell">Farewell</option>
+                            <option value="corporate">Corporate</option>
+                            <option value="photoshoot">Photoshoot</option>
+                        </select>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <div class="formGroup">
+                        <button type="submit" class="sendBtn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
