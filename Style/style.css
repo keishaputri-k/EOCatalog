@@ -344,6 +344,10 @@ footer .social a{
 }
   
 /* Contact Us Page */
+#inquiries {
+  height: 77vh;
+}
+
 .intro{
   margin-top: 140px;
 }
@@ -371,6 +375,7 @@ footer .social a{
 .contactSection {
   background-color: #d3d2d0;
   padding: 50px 0;
+  height: 69vh;
 }
 
 .contactDetails {
