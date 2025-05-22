@@ -51,37 +51,37 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit; /* Added for consistency with codepen a styles */
-  outline: none; /* Added for consistency with codepen a styles */
-  transition: all 0.4s ease-in-out; /* Added for consistency with codepen a styles */
-  -webkit-transition: all 0.4s ease-in-out; /* Added for consistency with codepen a styles */
+  color: inherit; 
+  outline: none;
+  transition: all 0.4s ease-in-out; 
+  -webkit-transition: all 0.4s ease-in-out; 
 }
-a:focus, /* Added for consistency with codepen a styles */
-a:active, /* Added for consistency with codepen a styles */
-a:visited, /* Added for consistency with codepen a styles */
-a:hover { /* Added for consistency with codepen a styles */
+a:focus, 
+a:active, 
+a:visited, 
+a:hover { 
   text-decoration: none;
   outline: none;
 }
-a:hover { /* Added for consistency with codepen a styles */
-  color: #e73700; /* Example hover color from codepen */
+a:hover { 
+  color: #d89b59; 
 }
 h2 {
-  margin-bottom: 48px; /* Adjusted to codepen values */
-  padding-bottom: 16px; /* Adjusted to codepen values */
-  font-size: 20px; /* Adjusted to codepen values */
-  line-height: 28px; /* Adjusted to codepen values */
-  font-weight: 700; /* Adjusted to codepen values */
-  position: relative; /* Adjusted to codepen values */
-  text-transform: capitalize; /* Adjusted to codepen values */
+  margin-bottom: 48px; 
+  padding-bottom: 16px; 
+  font-size: 20px; 
+  line-height: 28px; 
+  font-weight: 700; 
+  position: relative; 
+  text-transform: capitalize; 
 }
 h3 {
-  margin: 0 0 10px; /* Adjusted to codepen values */
-  font-size: 28px; /* Adjusted to codepen values */
-  line-height: 36px; /* Adjusted to codepen values */
+  margin: 0 0 10px; 
+  font-size: 28px; 
+  line-height: 36px; 
 }
 button {
-  outline: none !important; /* Added for consistency with codepen button styles */
+  outline: none !important; 
 }
 
 
@@ -95,7 +95,7 @@ button {
 /* -------- section title style ------- */
 .section-title {
   position: relative;
-  width: 400px; /* Adjusted to codepen values */
+  width: 400px; 
 }
 .section-title::before,
 .section-title::after {
@@ -112,7 +112,7 @@ button {
 }
 .section-title::after {
   width: 32px;
-  background: #e73700; /* Example accent color from codepen */
+  background: #cea256; 
 }
 
 /* ====== Header ======== */
@@ -246,7 +246,7 @@ footer .social a{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 0 1rem;
   box-sizing: border-box;
 }
@@ -260,7 +260,6 @@ footer .social a{
 }
 
 .portfolio {
-  margin-top: 20px;
   display: flex;
   gap: 20px;
   overflow-x: auto; /* Allow horizontal scrolling */
@@ -288,6 +287,7 @@ footer .social a{
   width: 15vw;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
   display: block;
   background-color: #000000;
 }
@@ -309,7 +309,6 @@ footer .social a{
   display: -webkit-flex;
   align-items: flex-end;
   -webkit-align-items: flex-end;
-  /* background: #343434 no-repeat center center / cover; <-- REMOVED */
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -317,14 +316,14 @@ footer .social a{
   -webkit-transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-.service-section .item img { /* Added style for the image inside the item */
+.service-section .item img { 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the item area */
-  z-index: 0; /* Ensures image is behind text */
+  object-fit: cover; 
+  z-index: 0; 
 }
 .service-section .item.active {
   width: 500px;
@@ -369,7 +368,7 @@ footer .social a{
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-.service-section .owl-theme.gallery-slider .owl-dots { /* Renamed custom-carousel to gallery-slider */
+.service-section .owl-theme.gallery-slider .owl-dots { 
   margin-top: -20px;
   position: relative;
   z-index: 5;
